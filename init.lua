@@ -87,6 +87,7 @@ vim.keymap.set('n', '<leader>fb', ':Pick buffers<CR>')
 vim.keymap.set('n', '<leader>fg', ':Pick grep<CR>')
 vim.keymap.set('n', '<leader>fs', ':Pick grep_live<CR>')
 vim.keymap.set('n', '<leader>ft', ':TodoQuickFix<CR>')
+vim.keymap.set('n', '<leader>fw', ':WimsInsertSymbol<CR>')
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<", "<gv")
@@ -96,7 +97,7 @@ vim.keymap.set("v", ">", ">gv")
 -- Plugins
 --
 vim.pack.add({
-    { src = "https://github.com/rebelot/kanagawa.nvim" },
+    { src = "https://github.com/scottmckendry/cyberdream.nvim"},
     { src = "https://github.com/folke/which-key.nvim" },
     { src = "https://github.com/stevearc/oil.nvim" },
     { src = "https://github.com/luukvbaal/nnn.nvim" },
@@ -224,4 +225,5 @@ vim.lsp.config("lua_ls", {
 --
 -- Finally...
 --
-vim.cmd("colorscheme kanagawa")
+require("wims").setup() -- developing this plugin locally
+vim.cmd("colorscheme cyberdream")
