@@ -117,7 +117,7 @@ require("lazy").setup({
             lazy = false,
             priority = 1000,
             config = function()
-                vim.cmd([[colorscheme cyberdream-light]])
+                vim.cmd([[colorscheme cyberdream]])
             end
         },
         { -- whichkey
@@ -345,14 +345,12 @@ require("lazy").setup({
                 })
             end,
         },
+        { -- local plugin dev WIMS.NVIM
+            dir = "~/Projects/wims.nvim"
+        },
     },
     -- Configure any other settings here. See the documentation for more details.
     rocks = { enabled = false },
     -- automatically check for plugin updates
     checker = { enabled = false },
 })
--- --
--- -- Finally...
--- --
--- require("wims").setup() -- developing this plugin locally
--- vim.keymap.set('n', '<leader>fw', ':WimsInsertSymbol<CR>')
