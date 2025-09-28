@@ -8,7 +8,9 @@
 -- 3) ripgrep
 -- 4) mason dependencies (curl,tar,unzip,gzip)
 --    a) Install Language Servers with :Mason (c compiler dependency)
---       - lua_language_server
+--       - lua-language-server (enable lua_ls)
+--       - python-lsp-server (enable pylsp)
+--       - jdtls (enable jdtls)
 --    b) Ensure it is enabled in the "Lua" section at the end
 
 --
@@ -306,7 +308,7 @@ require("lazy").setup({
                     },
                 },
                 daily_notes = {
-                    folder = "daily-tracking",
+                    folder = "inbox",
                     date_format = "%Y%m%d",
                     alias_format = "%B %d, %Y",
                 },
@@ -395,7 +397,7 @@ require("lazy").setup({
                 { "https://github.com/mason-org/mason.nvim", opts = {}  }
             },
             config = function()
-                vim.lsp.enable({ "lua_ls" })
+                vim.lsp.enable({ "lua_ls", "pylsp", "jdtls" })
                 vim.lsp.config("lua_ls", {
                     settings = {
                         Lua = {
