@@ -10,6 +10,7 @@ return {
         {"<leader>fs", "<cmd>FzfLua live_grep<CR>", desc="live [g]rep"}, 
         {"<leader>fgc", "<cmd>FzfLua git_commits<CR>", desc="find git [c]ommits"}, 
         {"<leader>fgC", "<cmd>FzfLua git_bcommits<CR>", desc="buffer [C]ommits"}, 
+        {"<leader>fgs", "<cmd>FzfLua git_status<CR>", desc="git [s]tatus search"}, 
         {"<leader>fh", "<cmd>FzfLua helptags<CR>", desc="find [h]elp"}, 
         {"<leader>f?", "<cmd>FzfLua builtin<CR>", desc="[?]see all"}, 
     },
