@@ -16,7 +16,7 @@ local options = {
 	list = true,          -- how to display whitespace in editor
 	listchars = { tab = '» ', trail = '·', nbsp = '␣' },
 	inccommand = 'split', -- show substitutions live in a split
-	cursorline = true,    -- show which line the cursor is on
+	cursorline = false,    -- show which line the cursor is on
 	scrolloff = 0,        -- minimum lines to keep before scrolling the window
 	expandtab = true,     -- convert tabs to spaces
 	autoindent = true,    -- automatically indent based on previous line
