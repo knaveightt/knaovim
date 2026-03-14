@@ -4,6 +4,7 @@
 -- Dependencies Required:
 -- 0) Patched Terminal Font (i.e. Nerd Font)
 -- 1) git and lazygit
+-- 2) fzf
 
 -- Load Core Customizations
 require("knaovim.core")
