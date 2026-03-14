@@ -6,3 +6,6 @@
 
 -- Load Core Customizations
 require("knaovim.core")
+
+-- Load Lazy.nvim plugin manager
+require("knaovim.lazy")
