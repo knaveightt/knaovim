@@ -1,8 +1,8 @@
 return { -- colorscheme
-    "scottmckendry/cyberdream.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd([[colorscheme cyberdream]])
+        vim.cmd([[colorscheme kanagawa]])
     end
 }
