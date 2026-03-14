@@ -24,6 +24,7 @@ keymap.set("v", ">", ">gv")
 
 keymap.set('n', '<leader>w', "<C-w>")
 keymap.set('n', '<leader>bd', ':bd<CR>', {desc="[d]elete buffer"})
+keymap.set('n', '<leader>bq', ':bp | bd #<CR>', {desc = 'soft [q]uit buffer'})
 keymap.set('n', '<leader>bw', ':write<CR>', {desc="[w]rite buffer"})
 keymap.set('n', '<leader>br', ':update<CR>:source<CR>', {desc="[r]un buffer"})
 keymap.set("n", "<leader>bl", ":ls<cr>:b<Space>", {desc="[l]ist buffers"})
