@@ -4,7 +4,7 @@ return {
     config = function()
         require("which-key").setup({
             require("which-key").add({
-                -- { '<leader>g', group = '[g]it' },
+                { '<leader>g', group = '[g]it actions' },
                 { '<leader>l', group = '[l]sp actions' },
                 -- { '<leader>t', group = '[t]ray toggles' },
                 -- { '<leader>f', group = '[f]ind something' },
