@@ -21,6 +21,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "knaovim.plugins.visuals" },
     { import = "knaovim.plugins.programming" },
+    { import = "knaovim.plugins.interface" },
   },
   -- turn off automatically checking for plugin updates
   checker = { enabled = false },
