@@ -9,6 +9,9 @@
 --    a) tar, curl
 --    b) tree-sitter-cli
 --    c) c compiler (e.g. gcc)
+-- 4) LSP Server Installs
+--    a) Run :Mason and install required LSP servers
+--    b) e.g. python-lsp-server, lua-lsp-server
 
 -- Load Core Customizations
 require("knaovim.core")
