@@ -7,6 +7,7 @@ return {
                 { '<leader>g', group = '[g]it actions' },
                 { '<leader>gf', group = '[f]ind something' },
                 { '<leader>l', group = '[l]sp actions' },
+                { '<leader>lf', group = '[f]ind something' },
                 { '<leader>i', group = '[i]nterface actions' },
                 -- { '<leader>t', group = '[t]ray toggles' },
                 { '<leader>f', group = '[f]ind something' },

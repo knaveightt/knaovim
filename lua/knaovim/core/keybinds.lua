@@ -28,6 +28,6 @@ keymap.set('n', '<leader>bq', ':bp | bd #<CR>', {desc = 'soft [q]uit buffer'})
 keymap.set('n', '<leader>bw', ':write<CR>', {desc="[w]rite buffer"})
 keymap.set('n', '<leader>br', ':update<CR>:source<CR>', {desc="[r]un buffer"})
 keymap.set("n", "<leader>bl", ":ls<cr>:b<Space>", {desc="[l]ist buffers"})
-keymap.set('n', '<leader>lf', vim.lsp.buf.format, {desc="[f]ormat buffer"})
-keymap.set('n', '<leader>ld', vim.diagnostic.open_float, {desc="show line [d]iagnostic"})
+keymap.set('n', '<leader>lF', vim.lsp.buf.format, {desc="[F]ormat buffer"})
+keymap.set('n', '<leader>ll', vim.diagnostic.open_float, {desc="show [l]ine diagnostic"})
 
