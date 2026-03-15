@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while getopts "r" opt; do
+	case $opt in
+		r)
+			rm -rf ~/.config/nvim
+	esac
+done
+
+mkdir -p ~/.config/nvim
+cp -r ./* ~/.config/nvim/
