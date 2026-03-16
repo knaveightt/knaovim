@@ -9,7 +9,6 @@ return {
                 { '<leader>l', group = '[l]sp actions' },
                 { '<leader>lf', group = '[f]ind something' },
                 { '<leader>i', group = '[i]nterface actions' },
-                -- { '<leader>t', group = '[t]ray toggles' },
                 { '<leader>f', group = '[f]ind something' },
                 -- { '<leader>n', group = '[n]nn/oil' },
                 { '<leader>w', group = '[w]indow actions' },
