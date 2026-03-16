@@ -50,6 +50,7 @@ keymap.set("n", "L", function()
 end, { desc = "smart-shift cursor and view downwards"})
 
 keymap.set('n', '<leader>w', "<C-w>")
+keymap.set('n', '<leader>q', ':bp | bd #<CR>', {desc = '[q]uit buffer'})
 keymap.set('n', '<leader>bd', ':bd<CR>', {desc="[d]elete buffer"})
 keymap.set('n', '<leader>bq', ':bp | bd #<CR>', {desc = 'soft [q]uit buffer'})
 keymap.set('n', '<leader>bw', ':write<CR>', {desc="[w]rite buffer"})
