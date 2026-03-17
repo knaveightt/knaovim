@@ -6,6 +6,7 @@ while getopts "r" opt; do
 	case $opt in
 		r)
 			rm -rf ~/.config/nvim-test
+			rm -rf ~/.local/share/nvim-test
 			r_flag=1
 	esac
 done
