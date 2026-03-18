@@ -13,6 +13,8 @@ return {
             'python',
             'vim',
             'vimdoc',
+            'markdown',
+            'markdown_inline',
         })
         
         vim.api.nvim_create_autocmd('FileType', {
