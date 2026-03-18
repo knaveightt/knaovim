@@ -5,9 +5,10 @@
 -- 0) Patched Terminal Font (i.e. Nerd Font)
 -- 1) git and lazygit
 -- 2) fzf
+-- 2b) yazi
 -- 3) treesitter dependencies
 --    a) tar, curl
---    b) tree-sitter-cli
+--    b) tree-sitter-cli, associated libs
 --    c) c compiler (e.g. gcc)
 -- 4) LSP Server Installs
 --    a) Run :Mason and install required LSP servers
