@@ -20,7 +20,6 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "knaovim.plugins.interface" },
-    { import = "knaovim.plugins.functions" },
     { import = "knaovim.plugins.programming" },
   },
 
