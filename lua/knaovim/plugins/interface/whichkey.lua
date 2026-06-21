@@ -10,9 +10,8 @@ return {
                 { '<leader>i', group = '[i]nteract' },
                 { '<leader>f', group = '[f]ind something' },
                 { '<leader>g', group = '[g]it actions' },
-                -- { '<leader>gf', group = '[f]ind something' },
+                { '<leader>gf', group = '[f]ind something' },
                 -- { '<leader>lf', group = '[f]ind something' },
-                -- { '<leader>n', group = '[n]nn/oil' },
             })
         })
     end

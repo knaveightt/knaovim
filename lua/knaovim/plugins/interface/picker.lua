@@ -10,6 +10,9 @@ return {
         {"<leader>fg", "<cmd>FzfLua live_grep<CR>", desc="live [g]rep"}, 
         {"<leader>fh", "<cmd>FzfLua helptags<CR>", desc="find [h]elp"}, 
         {"<leader>f?", "<cmd>FzfLua builtin<CR>", desc="[?]see all"}, 
+        {"<leader>gfl", "<cmd>FzfLua git_commits<CR>", desc="git commit [l]og"}, 
+        {"<leader>gfc", "<cmd>FzfLua git_bcommits<CR>", desc="buffer [C]ommits"}, 
+        {"<leader>gfs", "<cmd>FzfLua git_status<CR>", desc="git [s]tatus search"}, 
 --        {"<leader>lfl", "<cmd>FzfLua lsp_document_diagnostics<CR>", desc="[l]ist diagnostics"}, 
 --        {"<leader>lfs", "<cmd>FzfLua lsp_document_symbols<CR>", desc="find [s]ymbol"}, 
 --        {"<leader>lfd", "<cmd>FzfLua lsp_definitions<CR>", desc="find [d]efinition"}, 
@@ -18,8 +21,5 @@ return {
 --        {"<leader>lfi", "<cmd>FzfLua lsp_implementations<CR>", desc="find [i]mplementation"}, 
 --        {"<leader>lfr", "<cmd>FzfLua lsp_references<CR>", desc="find [r]eferences"}, 
 --        {"<leader>lff", "<cmd>FzfLua lsp_finder<CR>", desc="[f]ind instances"}, 
---        {"<leader>gfl", "<cmd>FzfLua git_commits<CR>", desc="git commit [l]og"}, 
---        {"<leader>gfc", "<cmd>FzfLua git_bcommits<CR>", desc="buffer [C]ommits"}, 
---        {"<leader>gfs", "<cmd>FzfLua git_status<CR>", desc="git [s]tatus search"}, 
     },
 }
