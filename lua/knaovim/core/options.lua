@@ -28,7 +28,7 @@ local options = {
     conceallevel = 2,     -- set conceal level, primarily for markdown
     foldlevelstart = 99,  -- sets the starting state of folds as unfolded
     updatetime = 50,      -- speed up updates (like lsp)
-    colorcolumn = "80",   -- color the 80th column
+    --colorcolumn = "80",   -- color the 80th column
     winborder = "rounded" -- rounded floating window border
 }
 for k, v in pairs(options) do
@@ -36,4 +36,4 @@ for k, v in pairs(options) do
 end
 
 -- define the color of the highlighted line number
-vim.api.nvim_set_hl(0, "CursorLineNr", {fg = "white", bold=true})
+--vim.api.nvim_set_hl(0, "CursorLineNr", {fg = "white", bold=true})
