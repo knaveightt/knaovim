@@ -43,7 +43,7 @@ local function is_at_bottom()
     local win = 0
     local cursor_screen_row = vim.fn.screenrow()
     local window_height = vim.fn.winheight(win)
-    if cursor_screen_row == window_height then
+    if cursor_screen_row-1 == window_height then -- -1 for bufferline
         return true
     else
         return false
@@ -51,14 +51,14 @@ local function is_at_bottom()
 end
 
 keymap.set("n", "H", function() -- smart H key
-    if vim.fn.screenrow() == 1 then
+    if vim.fn.screenrow() == 2 then -- 2 because of bufferline
         vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-u>', true, false, true), 'n', false)
     end
     vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('H0', true, false, true), 'n', false)
 end, { desc = "smart-shift cursor and view upwards"})
 
 keymap.set("n", "L", function() -- smart L key
-    -- print("screenrow:" .. vim.fn.screenrow() .. " winheight:" .. vim.fn.winheight(0) .. " " .. tostring(is_at_bottom())) -- for debug
+    --print("screenrow:" .. vim.fn.screenrow() .. " winheight:" .. vim.fn.winheight(0) .. " " .. tostring(is_at_bottom())) -- for debug
     if is_at_bottom() then
         vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-d>', true, false, true), 'n', false)
     end
