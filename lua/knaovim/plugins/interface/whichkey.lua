@@ -7,10 +7,10 @@ return {
                 { '<leader>w', group = '[w]indow actions' },
                 { '<leader>b', group = '[b]uffer actions' },
                 { '<leader>l', group = '[l]sp actions' },
+                { '<leader>i', group = '[i]nteract' },
                 -- { '<leader>g', group = '[g]it actions' },
                 -- { '<leader>gf', group = '[f]ind something' },
                 -- { '<leader>lf', group = '[f]ind something' },
-                -- { '<leader>i', group = '[i]nterface actions' },
                 -- { '<leader>f', group = '[f]ind something' },
                 -- { '<leader>n', group = '[n]nn/oil' },
             })
