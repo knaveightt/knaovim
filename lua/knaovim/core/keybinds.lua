@@ -23,6 +23,10 @@ keymap.set("n", "<M-l>", ":vertical resize +1<CR>")
 keymap.set("n", "<M-j>", ":resize +1<CR>")
 keymap.set("n", "<M-k>", ":resize -1<CR>")
 
+-- tab management
+keymap.set("n", "[t", ":tabprevious<CR>")
+keymap.set("n", "]t", ":tabNext<CR>")
+
 -- visual mode tweaks
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
