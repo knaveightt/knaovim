@@ -7,3 +7,5 @@
 3) fzf
 4) ripgrep
 5) tree-sitter-cli
+
+> Make sure you run :Mason and install the enabled lsp's

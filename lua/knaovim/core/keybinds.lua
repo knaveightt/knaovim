@@ -10,8 +10,6 @@ keymap.set('n', '<leader>bq', ':bp | bd #<CR>', {desc = 'soft [q]uit buffer'})
 keymap.set('n', '<leader>bw', ':write<CR>', {desc="[w]rite buffer"})
 keymap.set('n', '<leader>bs', ':update<CR>:source<CR>', {desc="[r]un buffer"})
 keymap.set("n", "<leader>bl", ":ls<cr>:b<Space>", {desc="[l]ist buffers"})
-keymap.set('n', '<leader>lF', vim.lsp.buf.format, {desc="[F]ormat buffer"})
-keymap.set('n', '<leader>ll', vim.diagnostic.open_float, {desc="show [l]ine diagnostic"})
 
 -- split management
 keymap.set("n", "<C-j>", "<C-w>j")
@@ -26,6 +24,18 @@ keymap.set("n", "<M-k>", ":resize -1<CR>")
 -- tab management
 keymap.set("n", "[t", ":tabprevious<CR>")
 keymap.set("n", "]t", ":tabNext<CR>")
+
+-- lsp keys
+keymap.set('n', '<leader>ld', vim.lsp.buf.definition, {desc="show [d]efinition"})
+keymap.set('n', '<leader>lD', vim.lsp.buf.declaration, {desc="show [d]eclaration"})
+keymap.set('n', '<leader>lK', vim.lsp.buf.hover, {desc="show [K] info"})
+keymap.set('n', '<leader>li', vim.lsp.buf.implementation, {desc="show [i]mplementation"})
+keymap.set('n', '<leader>lR', vim.lsp.buf.rename, {desc="re[n]ame"})
+keymap.set('n', '<leader>lt', vim.lsp.buf.type_definition, {desc="show [t]ype definition"})
+keymap.set('n', '<leader>la', vim.lsp.buf.code_action, {desc="show code [a]ction"})
+keymap.set('n', '<leader>lr', vim.lsp.buf.references, {desc="show [r]eferences"})
+keymap.set('n', '<leader>ll', vim.diagnostic.open_float, {desc="show [l]ine diagnostic"})
+keymap.set('n', '<leader>lF', vim.lsp.buf.format, {desc="[F]ormat buffer"})
 
 -- visual mode tweaks
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
