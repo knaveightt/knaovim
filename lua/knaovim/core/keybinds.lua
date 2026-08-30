@@ -46,8 +46,8 @@ keymap.set("x", "v", "vv") -- cancel V-Line be pressing v
 keymap.set("x", "V", "j0") -- keep using Shift+v to select more lines
 
 -- normal mode tweaks
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<C-d>", "<C-d><C-d>")
+keymap.set("n", "<C-u>", "<C-u><C-u>")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 keymap.set('n', '<ESC>', ':nohlsearch<CR>')
