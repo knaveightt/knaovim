@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "knaovim.plugins.interface" },
     { import = "knaovim.plugins.tools" },
     { import = "knaovim.plugins.programming" },
+    -- { import = "knaovim.plugins.local" },
   },
 
   -- automatically check for plugin updates
