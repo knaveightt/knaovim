@@ -11,7 +11,10 @@ return { -- lsp stack
             settings = {
                 Lua = {
                     workspace = {
-                        library = vim.api.nvim_get_runtime_file("", true),
+                        library = {
+                            vim.api.nvim_get_runtime_file("", true),
+                            vim.fn.expand("~/.local/share/LuaAddons"),
+                        }
                     },
                     diagnostics = {globals={'vim'}},
                 }
