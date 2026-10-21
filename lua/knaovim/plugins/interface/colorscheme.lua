@@ -15,6 +15,6 @@ return {
         })
 
         -- Load the colorscheme
-        vim.cmd("colorscheme carbonfox") -- You can also use 'dayfox', 'dawnfox', 'duskfox', 'nordfox', or 'terafox'
+        vim.cmd("colorscheme duskfox") -- You can also use 'dayfox', 'dawnfox', 'duskfox', 'nordfox', or 'terafox'
     end,
 }
